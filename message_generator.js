@@ -1,10 +1,10 @@
 // first exercise to be chosen with random number and paired with random rep number between 15-21
 const exerciseSet1 = ["squats", "squat jumps", "push ups", "box jumps", "mountain climbers", "jumping jacks", "sit ups", "step ups"]
 
-// second exercise to be mapped to random number between 5-14
+// second exercise with rep range 5-14
 const exerciseSet2 = ["kettlebell swings", "goblet squats", "rows (any type, weighted)", "dumbbell curls", "RDLs", "ab wheel rollouts", "lunges"]
 
-// third exercise to be mapped to random number between 1-4
+// third exercise with rep range 1-4
 const exerciseSet3 = ["sandbag over bar", "keg to shoulder", "sandbag to shoulder", "CDB press"]
 
 // workout formats 
@@ -44,7 +44,6 @@ const exerciseChooser3 = array3 =>{ //exerciseSet3 reps between 1-4
 
 }
 
-//format: ['3 rounds', '5 rounds', 'as many rounds as possible in 10 minutes',
 
 const workoutFormat = (array4) => {
     if (array4.length === 0) {
@@ -54,7 +53,7 @@ const workoutFormat = (array4) => {
  return console.log(`${array4[randomNumber4]}`);
 }
 
-console.log("Your conditioning workout of the day is:")
+console.log("Your conditioning finisher of the day is:")
 workoutFormat(workoutFormats)
 exerciseChooser1(exerciseSet1);
 exerciseChooser2(exerciseSet2);
